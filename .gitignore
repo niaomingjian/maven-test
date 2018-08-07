@@ -1,0 +1,10 @@
+#HIDDEN FILES
+.idea
+.DS_Store
+
+#DIRECTORIES
+target/
+
+#FILE TYPES
+*.ipr
+*.iml
