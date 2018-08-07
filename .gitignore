@@ -4,6 +4,7 @@
 
 #DIRECTORIES
 target/
+output/
 
 #FILE TYPES
 *.ipr

@@ -33,7 +33,9 @@ public class AccountCaptchaServiceTest {
         byte[] captchaImage = service.generateCaptchaImage(captchaKey);
         Assert.assertTrue(captchaImage.length > 0);
 
-        File image = new File("target/" + captchaKey + ".jpg");
+        File path = new File("output" );
+        path.mkdirs();
+        File image = new File(path,captchaKey + ".jpg");
         System.out.println(image.getAbsolutePath());
         OutputStream output = null;
         try{
