@@ -25,7 +25,7 @@ public class AccountEmailServiceTest {
 
     @Before
     public void startMailServer(){
-        greenMail = new GreenMail(ServerSetup.SMTP);
+        greenMail = new GreenMail(new ServerSetup(3025, (String)null, "smtp"));
         greenMail.start();
     }
 
